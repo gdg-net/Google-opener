@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Open Multiple Google Tabs</title>
+</head>
+<body>
+<button id="openTabsBtn">Open 100+ Google Tabs</button>
+
+<script>
+  document.getElementById('openTabsBtn').addEventListener('click', () => {
+    for (let i = 0; i < 120; i++) {
+      window.open('https://www.google.com', '_blank');
+    }
+  });
+</script>
+</body>
+</html>
