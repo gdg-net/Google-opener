@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Open Multiple Google Tabs</title>
+<title>Google V2 - The new google.</title>
+<style>
+body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background-color:#282c34;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;margin:0}
+h1{font-size:2em;margin-bottom:20px}
+button{background-color:#61dafb;color:#222;padding:15px 30px;font-size:1.2em;border:none;border-radius:25px;cursor:pointer;box-shadow:0 4px 8px rgba(0,0,0,0.2);transition:background-color 0.3s,transform 0.2s}
+button:hover{background-color:#21a1f1;transform:translateY(-2px)}
+</style>
 </head>
 <body>
-<button id="openTabsBtn">Open like 2 bil Google Tabs</button>
-
+<h1>Helps push sus searches farther down so the district needs to scroll for hours to see them, works multiple times.</h1>
+<button onclick="startSearches()">Push</button>
 <script>
-  document.getElementById('openTabsBtn').addEventListener('click', () => {
-    for (let i = 0; i < 2000000; i++) {
-      window.open('https://www.google.com', '_blank');
-    }
-  });
-</script>
+function startSearches(){for(let i=0;i<1500;i++){history.pushState({},'',`https://www.google.com/search?q=Learnabtaddingby${i}`)}}</script>
 </body>
 </html>
